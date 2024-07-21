@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benedict Mateo Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="outer-container">
+        <div class="container">
+            <aside class="profile">
+                <div class="profile-inner">
+                    <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+                    <button class="btn-primary">Get in touch 👋</button>
+                    <h1 class="greeting">Hello, I'm <span class="highlight">Angelo Barbu</span></h1>
+                    <p class="subtitle">Software Engineer</p>
+                    <p class="description">Based out Bucharest, RO. Specialized in building web and mobile applications. If you are a business seeking for a web presence or an employer looking to hire, you can get in touch with me here.</p>
+                    <button class="btn-section selected" onclick="scrollToSection('projects')">Projects I've worked on</button>
+                    <button class="btn-section" onclick="scrollToSection('work-experience')">Work Experiences</button>
+                    <button class="btn-section" onclick="scrollToSection('skills-tools')">Skills + Tools</button>
+                    <button class="btn-section" onclick="scrollToSection('interests')">Interests</button>
+                    <div class="social-links">
+                        <a href="https://linkedin.com" class="social-link">LinkedIn</a>
+                        <a href="https://github.com" class="social-link">GitHub</a>
+                        <a href="https://stackoverflow.com" class="social-link">Stackoverflow</a>
+                    </div>
+                </div>
+            </aside>
+            <main class="content">
+                <div class="content-section" id="projects">
+                    <h2>Projects I've worked on</h2>
+                    <div class="project-grid">
+                        <div class="project-card">
+                            <img src="loft.png" alt="Loft PH">
+                            <p class="project-title">Loft PH</p>
+                            <p class="project-tech">Express · VueJS · MongoDB</p>
+                        </div>
+                        <div class="project-card">
+                            <img src="paykickstart.png" alt="Paykickstart">
+                            <p class="project-title">Paykickstart</p>
+                            <p class="project-tech">Laravel · VueJS</p>
+                        </div>
+                        <div class="project-card">
+                            <img src="qtime.png" alt="QTime Software">
+                            <p class="project-title">QTime Software</p>
+                            <p class="project-tech">Laravel · VueJS · PostgreSQL</p>
+                        </div>
+                        <div class="project-card">
+                            <img src="real.png" alt="Real PH">
+                            <p class="project-title">Real PH</p>
+                            <p class="project-tech">Laravel · PostgreSQL</p>
+                        </div>
+                        <div class="project-card">
+                            <img src="filmis.png" alt="Filmis">
+                            <p class="project-title">Filmis</p>
+                            <p class="project-tech">Laravel · Angular 7 · MySQL</p>
+                        </div>
+                        <div class="project-card">
+                            <img src="qspace.png" alt="QSpace App">
+                            <p class="project-title">QSpace App</p>
+                            <p class="project-tech">Express · VueJS · PostgreSQL</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-section" id="work-experience">
+                    <h2>Work Experiences</h2>
+                    <div class="experience-card">
+                        <!-- Work experience content here -->
+                    </div>
+                    <div class="experience-card">
+                        <!-- Work experience content here -->
+                    </div>
+                </div>
+                <div class="content-section" id="skills-tools">
+                    <h2>Skills + Tools</h2>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <img src="html.png" alt="HTML">
+                            <p>HTML</p>
+                        </div>
+                        <div class="skill-card">
+                            <img src="css.png" alt="CSS">
+                            <p>CSS</p>
+                        </div>
+                        <div class="skill-card">
+                            <img src="javascript.png" alt="JavaScript">
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="skill-card">
+                            <img src="vue.png" alt="Vue.js">
+                            <p>Vue.js</p>
+                        </div>
+                        <div class="skill-card">
+                            <img src="node.png" alt="Node.js">
+                            <p>Node.js</p>
+                        </div>
+                        <div class="skill-card">
+                            <img src="mongodb.png" alt="MongoDB">
+                            <p>MongoDB</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-section" id="interests">
+                    <h2>Interests</h2>
+                    <div class="interest-card">
+                        <!-- Interests content here -->
+                    </div>
+                </div>
+            </main>
+        </div>
+        <footer>
+            <p>&copy; 2024 Angelo Barbu. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
