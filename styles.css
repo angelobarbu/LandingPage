@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #2b2b2b;
+    background-color: #303442;
     color: #fff;
     display: flex;
     justify-content: center;
@@ -32,7 +32,7 @@ body {
     flex: 1;
     gap: 40px;
     padding: 40px;
-    background-color: #1c1c1c;
+    background-color: #131419;
     border-radius: 15px;
     overflow: hidden;
 }
@@ -40,7 +40,7 @@ body {
 .profile {
     flex: 1;
     padding: 20px;
-    background-color: #161b22;
+    background-color: #181c24;
     border-radius: 10px;
     position: relative;
     display: flex;
@@ -156,7 +156,7 @@ body {
 }
 
 .project-card, .experience-card, .skill-card, .interest-card {
-    background-color: #161b22;
+    background-color: #181c24;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
