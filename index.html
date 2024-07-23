@@ -12,25 +12,34 @@
         <div class="container">
             <aside class="profile">
                 <div class="profile-inner">
-                    <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+                    <img src="assets/images/profile.jpeg" alt="Profile Picture" class="profile-pic">
                     <button class="btn-primary">Get in touch 👋</button>
-                    <h1 class="greeting">Hello, I'm <span class="highlight">Angelo Barbu</span></h1>
+                    <h1 class="greeting">Hello, I'm<br><span class="highlight">Angelo Barbu</span></h1>
                     <p class="subtitle">Software Engineer</p>
                     <p class="description">Based out Bucharest, RO. Specialized in building web and mobile applications. If you are a business seeking for a web presence or an employer looking to hire, you can get in touch with me here.</p>
-                    <button class="btn-section selected" onclick="scrollToSection('projects')">Projects I've worked on</button>
-                    <button class="btn-section" onclick="scrollToSection('work-experience')">Work Experiences</button>
-                    <button class="btn-section" onclick="scrollToSection('skills-tools')">Skills + Tools</button>
-                    <button class="btn-section" onclick="scrollToSection('interests')">Interests</button>
-                    <div class="social-links">
-                        <a href="https://linkedin.com" class="social-link">LinkedIn</a>
-                        <a href="https://github.com" class="social-link">GitHub</a>
-                        <a href="https://stackoverflow.com" class="social-link">Stackoverflow</a>
+                    <div class="btn-section-container">
+                        <button class="btn-section selected" onclick="scrollToSection('about')">About Me</button>
+                        <button class="btn-section" onclick="scrollToSection('interests')">Interests</button>
+                        <button class="btn-section" onclick="scrollToSection('projects')">Projects</button>
+                        <button class="btn-section" onclick="scrollToSection('work-experience')">Work Experience</button>
+                        <button class="btn-section" onclick="scrollToSection('skills-stack')">Skills & Tech Stack</button>
                     </div>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/angelo-gabriel-barbu-36b6551b7/" class="social-link" target="_blank"><img src="assets/logos/linkedin.png" alt="LinkedIn">LinkedIn</a>
+                    <a href="assets/files/CV_06_2024.pdf" class="social-link" target="_blank"><img src="assets/logos/cv.png" alt="CV">CV</a>
+                    <a href="https://github.com/angelobarbu" class="social-link" target="_blank"><img src="assets/logos/github.png" alt="GitHub">GitHub</a>
                 </div>
             </aside>
             <main class="content">
+                <div class="content-section" id="about">
+                </div>
+                <div class="content-section" id="interests">
+                    <div class="interest-card">
+                        <!-- Interests content here -->
+                    </div>
+                </div>
                 <div class="content-section" id="projects">
-                    <h2>Projects I've worked on</h2>
                     <div class="project-grid">
                         <div class="project-card">
                             <img src="loft.png" alt="Loft PH">
@@ -65,7 +74,6 @@
                     </div>
                 </div>
                 <div class="content-section" id="work-experience">
-                    <h2>Work Experiences</h2>
                     <div class="experience-card">
                         <!-- Work experience content here -->
                     </div>
@@ -73,8 +81,7 @@
                         <!-- Work experience content here -->
                     </div>
                 </div>
-                <div class="content-section" id="skills-tools">
-                    <h2>Skills + Tools</h2>
+                <div class="content-section" id="skills-stack">
                     <div class="skills-grid">
                         <div class="skill-card">
                             <img src="html.png" alt="HTML">
@@ -100,12 +107,6 @@
                             <img src="mongodb.png" alt="MongoDB">
                             <p>MongoDB</p>
                         </div>
-                    </div>
-                </div>
-                <div class="content-section" id="interests">
-                    <h2>Interests</h2>
-                    <div class="interest-card">
-                        <!-- Interests content here -->
                     </div>
                 </div>
             </main>
