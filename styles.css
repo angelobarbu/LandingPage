@@ -391,3 +391,75 @@ footer {
     color: #9d9da2;
     background-color: transparent;
 }
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .profile {
+        flex: none;
+        margin: 20px auto;
+        padding: 20px;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .profile-inner {
+        padding-top: 60px;
+    }
+
+    .profile-pic {
+        top: -50px;
+        left: calc(50% - 50px);
+    }
+
+    .btn-primary {
+        top: 20px;
+        right: 20px;
+    }
+
+    .greeting {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .highlight {
+        display: block;
+    }
+
+    .description {
+        text-align: center;
+    }
+
+    .btn-section-container {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .social-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .content {
+        padding: 0 10px;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        gap: 10px;
+    }
+
+    .skill-card:nth-child(3n+2) {
+        top: -25px;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
