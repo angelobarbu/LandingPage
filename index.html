@@ -19,10 +19,10 @@
                     <p class="description">Based out Bucharest, RO. Specialized in building web and mobile applications. If you are a business seeking for a web presence or an employer looking to hire, you can get in touch with me here.</p>
                     <div class="btn-section-container">
                         <button class="btn-section selected" onclick="scrollToSection('about')">About Me</button>
-                        <button class="btn-section" onclick="scrollToSection('interests')">Interests</button>
                         <button class="btn-section" onclick="scrollToSection('projects')">Projects</button>
                         <button class="btn-section" onclick="scrollToSection('work-experience')">Work Experience</button>
                         <button class="btn-section" onclick="scrollToSection('skills-stack')">Skills & Tech Stack</button>
+                        <button class="btn-section" onclick="scrollToSection('interests')">Interests</button>
                     </div>
                 </div>
                 <div class="social-links">
@@ -33,52 +33,53 @@
             </aside>
             <main class="content">
                 <div class="content-section" id="about">
-                </div>
-                <div class="content-section" id="interests">
-                    <div class="interest-card">
-                        <!-- Interests content here -->
+                    <div class="info-card">
+                        <p class="section-period">About Me</p>
+                        <h2>About Me</h2>
+                        <p>Here is the content for the About Me section.</p>
                     </div>
                 </div>
                 <div class="content-section" id="projects">
                     <div class="project-grid">
-                        <div class="project-card">
-                            <img src="loft.png" alt="Loft PH">
-                            <p class="project-title">Loft PH</p>
+                        <div class="project-card" onclick="window.open('https://github.com/your-repo-1', '_blank')">
+                            <p class="project-status finished">Finished</p>
+                            <h3 class="project-title">Loft PH</h3>
                             <p class="project-tech">Express · VueJS · MongoDB</p>
+                            <p class="project-description">A project description goes here...A project description goes here...A project description goes here...A project description goes here...A project description goes here...A project description goes here...A project description goes here...</p>
+                            <div class="project-icons">
+                                <img src="assets/logos/cv.png" alt="Express">
+                                <img src="assets/logos/cv.png" alt="VueJS">
+                                <img src="assets/logos/cv.png" alt="MongoDB">
+                            </div>
                         </div>
-                        <div class="project-card">
-                            <img src="paykickstart.png" alt="Paykickstart">
-                            <p class="project-title">Paykickstart</p>
+                        <div class="project-card" onclick="window.open('https://github.com/your-repo-2', '_blank')">
+                            <p class="project-status in-progress">In Progress</p>
+                            <h3 class="project-title">Paykickstart</h3>
                             <p class="project-tech">Laravel · VueJS</p>
+                            <p class="project-description">A project description goes here...</p>
+                            <div class="project-icons">
+                                <img src="assets/logos/github.png" alt="Laravel">
+                                <img src="assets/logos/github.png" alt="VueJS">
+                                <img src="assets/logos/github.png" alt="PostgreSQL">
+                            </div>
                         </div>
-                        <div class="project-card">
-                            <img src="qtime.png" alt="QTime Software">
-                            <p class="project-title">QTime Software</p>
-                            <p class="project-tech">Laravel · VueJS · PostgreSQL</p>
-                        </div>
-                        <div class="project-card">
-                            <img src="real.png" alt="Real PH">
-                            <p class="project-title">Real PH</p>
-                            <p class="project-tech">Laravel · PostgreSQL</p>
-                        </div>
-                        <div class="project-card">
-                            <img src="filmis.png" alt="Filmis">
-                            <p class="project-title">Filmis</p>
-                            <p class="project-tech">Laravel · Angular 7 · MySQL</p>
-                        </div>
-                        <div class="project-card">
-                            <img src="qspace.png" alt="QSpace App">
-                            <p class="project-title">QSpace App</p>
-                            <p class="project-tech">Express · VueJS · PostgreSQL</p>
-                        </div>
+                        <!-- Add more project cards as needed -->
                     </div>
                 </div>
                 <div class="content-section" id="work-experience">
                     <div class="experience-card">
-                        <!-- Work experience content here -->
+                        <p class="experience-duration">FEBRUARY 2020 - PRESENT</p>
+                        <h2>Front-End Developer</h2>
+                        <p class="company-name">Paykickstart LLC</p>
+                        <img src="assets/logos/linkedin.png" alt="Company Logo" class="company-logo">
+                        <p>Convert web design to code and create functionality for components using Laravel, VueJS + Vuex, and Sass.</p>
                     </div>
                     <div class="experience-card">
-                        <!-- Work experience content here -->
+                        <p class="experience-duration">APRIL 2019 - JUNE 2020</p>
+                        <h2>Software Engineer</h2>
+                        <p class="company-name">Ogolu, August 99 Inc.</p>
+                        <img src="assets/logos/cv.png" alt="Company Logo" class="company-logo">
+                        <p>Developed and architectured MVP applications built with different web frameworks and libraries such as React + Redux (Saga), React Native, VueJS, Next, Nuxt, Laravel, MongoDB, PostgreSQL.</p>
                     </div>
                 </div>
                 <div class="content-section" id="skills-stack">
@@ -107,6 +108,13 @@
                             <img src="mongodb.png" alt="MongoDB">
                             <p>MongoDB</p>
                         </div>
+                    </div>
+                </div>
+                <div class="content-section" id="interests">
+                    <div class="info-card">
+                        <p class="section-period">Interests</p>
+                        <h2>Interests</h2>
+                        <p>Here is the content for the Interests section.</p>
                     </div>
                 </div>
             </main>

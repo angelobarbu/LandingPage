@@ -31,13 +31,15 @@ body {
     display: flex;
     flex: 1;
     gap: 120px;
-    padding: 60px;
+    padding: 0 60px 0 60px;
     background-color: #131419;
     border-radius: 15px;
     overflow: hidden;
 }
 
 .profile {
+    margin-top: 60px;
+    margin-bottom: 60px;
     flex: 0 0 450px;
     padding: 30px;
     background-color: #181c24;
@@ -100,7 +102,7 @@ body {
 .description {
     font-size: 0.8em;
     margin: 5px 0 15px;
-    line-height: 1.5;
+    line-height: 1.8;
     text-align: left;
     color: #9d9da2;
     padding: 20px 0;
@@ -117,13 +119,13 @@ body {
     font-size: 0.8em;
     background-color: transparent;
     color: #9d9da2;
-    padding: 5px 10px; /* Added padding */
+    padding: 7px 10px;
     border: 2px solid transparent;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s, border-color 0.3s;
     text-align: left;
-    width: fit-content; /* Adjust width to fit content */
+    width: fit-content;
 }
 
 .btn-section::before {
@@ -131,7 +133,7 @@ body {
     color: #00aafd;
     display: none;
     position: absolute;
-    left: -15px; /* Adjust position as needed */
+    left: -15px;
     font-size: 1.2em;
 }
 
@@ -140,8 +142,8 @@ body {
     background-color: #20398d;
     border-color: #20398d;
     color: #fff;
-    padding-left: 20px; /* Added padding for selected state */
-    width: fit-content; /* Adjust width to fit content */
+    padding-left: 20px;
+    width: fit-content;
 }
 
 .btn-section.selected::before {
@@ -152,7 +154,7 @@ body {
     margin-top: auto;
     display: flex;
     justify-content: center;
-    gap: 90px; /* Increased gap between social links */
+    gap: 90px;
     width: 100%;
 }
 
@@ -187,17 +189,16 @@ body {
 }
 
 .content-section {
-    margin-bottom: 40px;
+    margin-bottom: 80px;
 }
 
-
-.project-grid, .skills-grid {
+.skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 20px;
 }
 
-.project-card, .experience-card, .skill-card, .interest-card {
+.skill-card {
     background-color: #181c24;
     padding: 20px;
     border-radius: 10px;
@@ -206,24 +207,172 @@ body {
     transition: transform 0.3s;
 }
 
-.project-card:hover, .experience-card:hover, .skill-card:hover, .interest-card:hover {
+.skill-card:hover {
     transform: translateY(-10px);
-    box-shadow: none;
 }
 
-.project-card img, .skill-card img {
-    max-width: 100px;
+.skill-card img {
+    max-width: 50px;
     margin-bottom: 10px;
 }
 
-.project-title, .skill-card p {
+.skill-card p {
     font-weight: bold;
     margin-bottom: 5px;
+    color: #aaa;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #181c24;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-status {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 0.7em;
+}
+
+.project-status.finished {
+    color: #72bf6a;
+}
+
+.project-status.in-progress {
+    color: #234cca;
+}
+
+.project-status.refactor {
+    color: #ffa500;
+}
+
+.project-title {
+    color: #00aafd;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    font-weight: 400;
 }
 
 .project-tech {
     font-size: 0.9em;
-    color: #aaa;
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+.project-description {
+    font-size: 0.8em;
+    color: #bbb;
+    flex: 1;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.project-icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-icons img {
+    width: 36px;
+    height: 36px;
+}
+
+.experience-card {
+    background-color: #181c24;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    position: relative;
+    box-shadow: none;
+    transition: transform 0.3s;
+}
+
+.experience-card:hover {
+    transform: translateY(-10px);
+}
+
+.experience-card .experience-duration {
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+}
+
+.experience-card .company-name {
+    color: #fff;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.experience-card h2 {
+    color: #00aafd;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.experience-card p {
+    color: #9d9da2;
+    font-size: 0.8em;
+    padding-bottom: 10px;
+    line-height: 1.8;
+}
+
+.company-logo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: auto;
+}
+
+.info-card {
+    margin-top: 20px;
+    background-color: #181c24;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    position: relative;
+    box-shadow: none;
+    transition: transform 0.3s;
+}
+
+.info-card:hover {
+    transform: translateY(-10px);
+}
+
+.info-card .section-period {
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+}
+
+.info-card h2 {
+    color: #00aafd;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.info-card p {
+    color: #9d9da2;
+    font-size: 0.8em;
+    padding-bottom: 10px;
+    line-height: 1.8;
 }
 
 footer {
