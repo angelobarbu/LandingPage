@@ -193,18 +193,26 @@ body {
 }
 
 .skills-grid {
+    padding-top: 70px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    position: relative;
 }
 
 .skill-card {
     background-color: #181c24;
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;
     text-align: center;
     box-shadow: none;
     transition: transform 0.3s;
+    position: relative;
+    color: #fff;
+}
+
+.skill-card:nth-child(3n+2) {
+    top: -90px; /* Adjust this value to achieve the desired elevation */
 }
 
 .skill-card:hover {
@@ -219,7 +227,7 @@ body {
 .skill-card p {
     font-weight: bold;
     margin-bottom: 5px;
-    color: #aaa;
+    color: #c5c5c5;
 }
 
 .project-grid {
@@ -302,6 +310,7 @@ body {
     position: relative;
     box-shadow: none;
     transition: transform 0.3s;
+    margin-bottom: 25px;
 }
 
 .experience-card:hover {
