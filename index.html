@@ -16,11 +16,15 @@
                     <button class="btn-primary">Get in touch 👋</button>
                     <h1 class="greeting">Hello, I'm<br><span class="highlight">Angelo Barbu</span></h1>
                     <p class="subtitle">Software Engineer</p>
-                    <p class="description">Based out Bucharest, RO. Specialized in building web and mobile applications. If you are a business seeking for a web presence or an employer looking to hire, you can get in touch with me here.</p>
+                    <p class="description">
+                        Automatic Control & Systems and Computer Engineer based in Bucharest, Romania. Specialised in backend software engineering, I have acquired a wide range of skills and tech stacks. <br>
+                        Sounds interesting? Let's get in touch and discuss your project or job opportunity.
+                         </p>
                     <div class="btn-section-container">
                         <button class="btn-section selected" onclick="scrollToSection('about')">About Me</button>
                         <button class="btn-section" onclick="scrollToSection('projects')">Projects</button>
                         <button class="btn-section" onclick="scrollToSection('work-experience')">Work Experience</button>
+                        <button class="btn-section" onclick="scrollToSection('education')">Education</button>
                         <button class="btn-section" onclick="scrollToSection('skills-stack')">Skills & Tech Stack</button>
                         <button class="btn-section" onclick="scrollToSection('interests')">Interests</button>
                     </div>
@@ -41,32 +45,120 @@
                 </div>
                 <div class="content-section" id="projects">
                     <div class="project-grid">
-                        <div class="project-card" onclick="window.open('https://github.com/your-repo-1', '_blank')">
-                            <p class="project-status finished">Finished</p>
-                            <h3 class="project-title">Loft PH</h3>
-                            <p class="project-tech">Express · VueJS · MongoDB</p>
-                            <p class="project-description">A project description goes here...A project description goes here...A project description goes here...A project description goes here...A project description goes here...A project description goes here...A project description goes here...</p>
-                            <div class="project-icons">
-                                <img src="assets/logos/cv.png" alt="Express">
-                                <img src="assets/logos/cv.png" alt="VueJS">
-                                <img src="assets/logos/cv.png" alt="MongoDB">
-                            </div>
-                        </div>
-                        <div class="project-card" onclick="window.open('https://github.com/your-repo-2', '_blank')">
+                        <div class="project-card" onclick="window.open('https://github.com/angelobarbu/Decentralised-Identity-System', '_blank')">
                             <p class="project-status in-progress">In Progress</p>
-                            <h3 class="project-title">Paykickstart</h3>
-                            <p class="project-tech">Laravel · VueJS</p>
-                            <p class="project-description">A project description goes here...</p>
+                            <h3 class="project-title">Decentralised Identity System</h3>
+                            <p class="project-tech">Blockchain · Web3 · Truffle Suite Solidity · Node.js · React JavaScript </p>
+                            <p class="project-description">Decentralised Identity Verification System that implements smart contracts and SSI principles to achieve a secure, privacy-preserving and user centric system</p>
                             <div class="project-icons">
-                                <img src="assets/logos/github.png" alt="Laravel">
-                                <img src="assets/logos/github.png" alt="VueJS">
-                                <img src="assets/logos/github.png" alt="PostgreSQL">
+                                <img src="assets/logos/web3.png" alt="Web3">
+                                <img src="assets/logos/react.webp" alt="React">
+                                <img src="assets/logos/blockchain.png" alt="Blockchain">
                             </div>
                         </div>
-                        <!-- Add more project cards as needed -->
+                        <div class="project-card" onclick="window.open('https://estimare.beststudios.ro', '_blank')">
+                            <p class="project-status finished">Finished</p>
+                            <h3 class="project-title">Revenue Calculator Landing Page</h3>
+                            <p class="project-tech">Python · Flask.py · Wordpress PHP · JavaScript · CSS · Work Project - Teamwork </p>
+                            <p class="project-description">Landing Page for calculating potential revenue based on a regression formula. The result of the calculus is processed and returned using a Flask.py microservice and the website was developed using Wordpress and PHP.</p>
+                            <div class="project-icons">
+                                <img src="assets/logos/flask.png" alt="Flask.py">
+                                <img src="assets/logos/wordpress.png" alt="Wordpress">
+                                <img src="assets/logos/php.png" alt="PHP">
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <p class="project-status finished">Finished</p>
+                            <h3 class="project-title">Qube</h3>
+                            <p class="project-tech">Qt Framework · C++ · QML Python · gRPC · Work Project - Teamwork</p>
+                            <p class="project-description">Enterprise Resource Planning(ERP) software for business management and statistics tailor-made for the client's specific business logic. The solution was developed using Qt framework - C++ with Qt for backend and QML for frontend. The microservices were implemented using Python and Flask.py and the server communication is assured by implementing gRPC communication.</p>
+                            <div class="project-icons">
+                                <img src="assets/logos/qt.png" alt="Qt framework">
+                                <img src="assets/logos/cpp.png" alt="C++">
+                                <img src="assets/logos/grpc.png" alt="gRPC">
+                            </div>
+                        </div>
+                        <div class="project-card" onclick="window.open('https://github.com/angelobarbu/Energy-Blockchain-Platform/tree/Refactor', '_blank')">
+                            <p class="project-status refactor">Refactor</p>
+                            <h3 class="project-title">Energy Blockchain Platform</h3>
+                            <p class="project-tech">Blockchain · Web3 · Truffle Suite · Solidity · Node.js · React JavaScript</p>
+                            <p class="project-description">The Decentralised Energy Trading and Tracking System offers a highly secure and privacy-preserving system where energy resources can be traded, tracked and certified using a smart contract that facilitates the decentralized trading and tracking of energy resources between buyers and sellers.</p>
+                            <div class="project-icons">
+                                <img src="assets/logos/blockchain.png" alt="Blockchain">
+                                <img src="assets/logos/truffle.png" alt="Truffle">
+                                <img src="assets/logos/react.webp" alt="React">
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <p class="project-status finished">Finished</p>
+                            <h3 class="project-title">Social Media Automation</h3>
+                            <p class="project-tech">Python · Qt Framework Flask.py · PyQt · AI · OpenAI API  QML · Selenium · gRPC · Work Project - Team </p>
+                            <p class="project-description">Social Media Automation solution, developed and tailor-made for client's social media business pipelines' requirements. The client was implemented backend wise using Python and Qt Framework and QML for frontend. The automation was developed using Selenium Grid and the intelligent responses were generated using an AI component based on OpenAI's GPT4. Microservices were implemented using Flask.py and server communication was established using gRPC.</p>
+                            <div class="project-icons">
+                                <img src="assets/logos/open_ai.svg" alt="OpenAI">
+                                <img src="assets/logos/python.webp" alt="Python">
+                                <img src="assets/logos/qt.png" alt="Qt">
+                            </div>
+                        </div>
+                        <div class="project-card" onclick="window.open('https://github.com/angelobarbu/Warehouse-Stock-Management', '_blank')">
+                            <p class="project-status finished">Finished</p>
+                            <h3 class="project-title">Warehouse Stock Management</h3>
+                            <p class="project-tech">Java · Object-Oriented Programming · Multithreading</p>
+                            <p class="project-description">University project that simulates the business logic and backend of a warehouse stock management application. The project implements core functionalities for this type of backend, such as multiple collections, multithreading, lambdas for listener functions and streams for warehouse reports and statistics.</p>
+                            <div class="project-icons">
+                                <img src="assets/logos/java.png" alt="Java">
+                                <img src="assets/logos/oop.png" alt="OOP">
+                                <img src="assets/logos/multithreading.png" alt="Multithreading">
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
                 <div class="content-section" id="work-experience">
+                    <div class="experience-card">
+                        <p class="experience-duration">NOVEMBER 2022 - PRESENT</p>
+                        <h2>Software Engineer</h2>
+                        <p class="company-name">Business2Point</p>
+                        <img src="assets/logos/b2p.png" alt="Business2Point" class="company-logo">
+                        <p class="description">
+                            <span>Developed and maintained the backend of the company's main product, a desktop-based ERP solution</span>
+                            <span>Implemented new features and functionalities for the ERP system using the Qt framework and C++</span>
+                            <span>Implemented microservices for the ERP system using Python - Flask.py and Waitress</span>
+                            <span>Developed the server communication using gRPC</span>
+                            <span>Implemented the client of an automation solution for social media business pipelines using Python and PyQt</span>
+                            <span>Integrated AI Components into the automation solution</span>
+                            <span>Developed multiple web applications using JavaScript, HTML and CSS</span>
+                            <span>Developed multiple websites and landing pages using Wordpress and PHP</span>
+                            <span>Developed Chrome browser extensions using JavaScript, HTML and CSS</span>
+                            <span>Optimised system prompts of multiple AI components for various automation tasks</span>
+                        </p>
+                    </div>
+                    <div class="experience-card">
+                        <p class="experience-duration">JUNE 2022 - SEPTEMBER 2022</p>
+                        <h2>Software Engineer Intern - Machine Learning</h2>
+                        <p class="company-name">Keysight Technologies Romania</p>
+                        <img src="assets/logos/keysight.png" alt="Keysight" class="company-logo">
+                        <p class="description">
+                            <span>Acquired basic knowledge of Machine Learning and Python fundamentals</span>
+                            <span>Studied the mathematical theory of Machine Learning algorithms and neural networks</span>
+                            <span>Implemented multiple starter tasks in Machine Learning, such as handwritten digits and image clasiffiers using Binary Classification and Convolutional Neural Network(CNN)</span>
+                            <span>Developed a solution for log parsing used in an internal project</span>
+                        </p>
+                    </div>
+                    <div class="experience-card">
+                        <p class="experience-duration">NOVEMBER 2019 - JUNE 2020</p>
+                        <h2>Apprentice Software Engineer</h2>
+                        <p class="company-name">Oracle Romania</p>
+                        <img src="assets/logos/oracle.svg" alt="Oracle" class="company-logo">
+                        <p class="description">
+                            <span>Completed the Oracle Academy training program</span>
+                            <span>Acquired experience regarding Oracle Database and SQL Development</span>
+                            <span>Hands-on programming skills in developing web applications using Java and web services</span>
+                            <span>Successfully developed a library platform, our main project, as a team in an Agile metholodgy work environment</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="content-section" id="education">
                     <div class="experience-card">
                         <p class="experience-duration">FEBRUARY 2020 - PRESENT</p>
                         <h2>Front-End Developer</h2>
@@ -79,42 +171,166 @@
                         <h2>Software Engineer</h2>
                         <p class="company-name">Ogolu, August 99 Inc.</p>
                         <img src="assets/logos/cv.png" alt="Company Logo" class="company-logo">
-                        <p>Developed and architectured MVP applications built with different web frameworks and libraries such as React + Redux (Saga), React Native, VueJS, Next, Nuxt, Laravel, MongoDB, PostgreSQL.</p>
+                        <p class="description">Developed and architectured MVP applications built with different web frameworks and libraries such as React + Redux (Saga), React Native, VueJS, Next, Nuxt, Laravel, MongoDB, PostgreSQL.</p>
                     </div>
                 </div>
                 <div class="content-section" id="skills-stack">
                     <div class="skills-grid">
                         <div class="skill-card">
-                            <img src="assets/logos/blockchain.png" alt="HTML">
+                            <img src="assets/logos/c.png" alt="C">
+                            <p>C</p>
+                        </div>
+                        <div class="skill-card">
+                            <img src="assets/logos/cpp.png" alt="C++">
+                            <p>C++</p>
+                        </div>
+                        <div class="skill-card">
+                            <img src="assets/logos/python.webp" alt="Python">
+                            <p>Python</p>
+                        </div>
+                        <div class="skill-card">
+                            <img src="assets/logos/qt.png" alt="JavaScript">
+                            <p>Qt framework</p>
+                        </div>
+                        <div class="skill-card">
+                            <img src="assets/logos/java.png" alt="Java">
+                            <p>Java</p>
+                        </div>
+                        <div class="skill-card">
+                            <img src="assets/logos/solidity.png" alt="Solidity">
+                            <p>Solidity</p>
+                        </div>
+                        <div class="skill-card">
+                            <img src="assets/logos/matlab.png" alt="Matlab">
+                            <p>Matlab</p>
+                        </div>
+                        <div class="skill-card">
+                            <img src="assets/logos/julia.png" alt="Julia">
+                            <p>Julia</p>
+                        </div>
+                        <div class="skill-card">
+                            <img src="assets/logos/sql.png" alt="SQL">
+                            <p>SQL</p>
+                        </div>
+                        <div class="skill-card">
+                            <img src="assets/logos/php.png" alt="PHP">
+                            <p>PHP</p>
+                        </div>
+                        <div class="skill-card">
+                            <img src="assets/logos/javascript.png" alt="JavaScript">
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="skill-card">
+                            <img src="assets/logos/html.png" alt="HTML">
                             <p>HTML</p>
                         </div>
                         <div class="skill-card">
-                            <img src="assets/logos/blockchain.png" alt="CSS">
+                            <img src="assets/logos/CSS.png" alt="CSS">
                             <p>CSS</p>
                         </div>
                         <div class="skill-card">
-                            <img src="assets/logos/blockchain.png" alt="JavaScript">
-                            <p>JavaScript</p>
+                            <img src="assets/logos/qml.png" alt="QML">
+                            <p>QML</p>
+                        </div>
+                        <div class="skill-card">
+                            <img src="assets/logos/mongodb.png" alt="MongoDB">
+                            <p>MongoDB</p>
+                        </div>
+                        <div class="skill-card">
+                            <img src="assets/logos/postgresql.png" alt="PostgreSQL">
+                            <p>PostgreSQL</p>
+                        </div>
+                        <div class="skill-card">
+                            <img src="assets/logos/node.webp" alt="Node.js">
+                            <p>Node.js</p>
+                        </div>
+                        <div class="skill-card">
+                            <img src="assets/logos/react.webp" alt="React">
+                            <p>React.js</p>
+                        </div>
+                        <div class="skill-card">
+                            <img src="assets/logos/flask.png" alt="Flask.py">
+                            <p>Flask.py</p>
+                        </div>
+                        <div class="skill-card">
+                            <img src="assets/logos/truffle.png" alt="Truffle">
+                            <p>Truffle suite</p>
                         </div>
                         <div class="skill-card">
                             <img src="assets/logos/blockchain.png" alt="Blockchain">
                             <p>Blockchain</p>
                         </div>
                         <div class="skill-card">
-                            <img src="assets/logos/blockchain.png" alt="Node.js">
-                            <p>Node.js</p>
+                            <img src="assets/logos/web3.png" alt="Web3">
+                            <p>Web3</p>
                         </div>
                         <div class="skill-card">
-                            <img src="assets/logos/blockchain.png" alt="MongoDB">
-                            <p>MongoDB</p>
+                            <img src="assets/logos/bash.png" alt="Bash">
+                            <p>Linux Bash</p>
+                        </div>
+                        <div class="skill-card">
+                            <img src="assets/logos/redis.webp" alt="Redis">
+                            <p>Redis Queue</p>
+                        </div>
+                        <div class="skill-card">
+                            <img src="assets/logos/ml.png" alt="ML">
+                            <p>Machine Learning</p>
+                        </div>
+                        <div class="skill-card">
+                            <img src="assets/logos/oop.png" alt="OOP">
+                            <p>Object-Oriented Programming</p>
+                        </div>
+                        <div class="skill-card">
+                            <img src="assets/logos/dsa.png" alt="A & DS">
+                            <p>Algorithms & Data Structures</p>
+                        </div>
+                        <div class="skill-card">
+                            <img src="assets/logos/git.svg" alt="Git">
+                            <p>Git Bash</p>
+                        </div>
+                        <div class="skill-card">
+                            <img src="assets/logos/embedded.png" alt="OOP">
+                            <p>Embedded</p>
+                        </div>
+                        <div class="skill-card">
+                            <img src="assets/logos/multithreading.png" alt="Multithreading">
+                            <p>Multithreading</p>
+                        </div>
+                        <div class="skill-card">
+                            <img src="assets/logos/pandas.png" alt="Pandas">
+                            <p>Pandas DataFrames</p>
+                        </div>
+                        <div class="skill-card">
+                            <img src="assets/logos/bigdata.png" alt="BigData">
+                            <p>Big Data</p>
+                        </div>
+                        <div class="skill-card">
+                            <img src="assets/logos/prompt_eng.png" alt="PromptEng">
+                            <p>Prompt Engineering</p>
+                        </div>
+                        <div class="skill-card">
+                            <img src="assets/logos/ai.png" alt="AI">
+                            <p>Artificial Intelligence</p>
+                        </div>
+                        <div class="skill-card">
+                            <img src="assets/logos/open_ai.svg" alt="OpenAI">
+                            <p>OpenAI API</p>
+                        </div>
+                        <div class="skill-card">
+                            <img src="assets/logos/llm.png" alt="LLM">
+                            <p>Large Language Models</p>
                         </div>
                     </div>
                 </div>
                 <div class="content-section" id="interests">
                     <div class="info-card">
                         <p class="section-period">Interests</p>
-                        <h2>Interests</h2>
-                        <p>Here is the content for the Interests section.</p>
+                        <h2>Besides the academic and career life</h2>
+                        <p>Even though I started studying and developing my career in Computer Science from pure passion, I enjoy many other hobbies and activities. <br> <br>
+                           I like being physically active and I look forward to going for a walk in the park, a swim at the nearest pool or a ride on the bycicle whenever I get the chance. I also enjoy going to a good concert or a long-expected movie at the cinema and I try to be as outgoing as my time allows me to. <br> <br>
+                           One of my favorite activities is travelling, as I love meeting new people, discovering new cultures, places and exploring everything there is to see. I totally enjoy a good meal, a nice song or a unique landscape, and I consider these little things some of the biggest joys we can encounter. <br><br>
+                           Last but not least, I am a major geek when it comes to technology and I am always up to date with the latest gadgets, software and tech news. I am a big fan when it comes to the latest tech trends and I am always looking forward to the next big thing in the tech world.
+                        </p>
                     </div>
                 </div>
             </main>
